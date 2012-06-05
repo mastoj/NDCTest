@@ -7,14 +7,14 @@ using NUnit.Framework;
 
 namespace NDCTest
 {
-    public class adding_999_with_1 : Specifiation<ThreeDigitCalculator>
+    public class adding_999_with_1 : Specification<ThreeDigitCalculator, int>
     {
         protected override ThreeDigitCalculator Given()
         {
             return new ThreeDigitCalculator();
         }
 
-        public override Command When(ThreeDigitCalculator context)
+        public override Command<int> When(ThreeDigitCalculator context)
         {
             return new AdditionCommand(context, 999, 1);
         }
@@ -32,14 +32,14 @@ namespace NDCTest
         }
     }
 
-    class when_adding_2_with_2 : Specifiation<ThreeDigitCalculator>
+    class when_adding_2_with_2 : Specification<ThreeDigitCalculator, int>
     {
         protected override ThreeDigitCalculator Given()
         {
             return new ThreeDigitCalculator();
         }
 
-        public override Command When(ThreeDigitCalculator context)
+        public override Command<int> When(ThreeDigitCalculator context)
         {
             return new AdditionCommand(context, 2, 2);
         }
@@ -47,7 +47,7 @@ namespace NDCTest
         [Test]
         public void it_should_be_4()
         {
-            Assert.AreEqual(4, SUT.LastResult);
+            Assert.AreEqual(4, Result);
         }
     }
 
@@ -73,7 +73,7 @@ namespace NDCTest
         }
     }
 
-    class AdditionCommand : Command
+    class AdditionCommand : Command<int>
     {
         private readonly ThreeDigitCalculator _threeDigitCalculator;
 
@@ -91,9 +91,9 @@ namespace NDCTest
             return string.Format("Adding numbers {0} and {1}", Factor1, Factor2);
         }
 
-        public override void Execute()
+        public override int Execute()
         {
-            _threeDigitCalculator.Add(Factor1, Factor2);
+            return _threeDigitCalculator.Add(Factor1, Factor2);
         }
     }
 

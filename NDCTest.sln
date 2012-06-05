@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NDCTestConsole", "NDCTestCo
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NDCTestTest", "NDCTestTest\NDCTestTest.csproj", "{693583B7-A06D-4CD9-BE09-71F9F9744EEE}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ScoreBoard", "ScoreBoard\ScoreBoard.csproj", "{3FAC19F1-6BD7-4A3A-9DB3-0F027E2E109D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -17,6 +19,10 @@ Global
 		{258F1D67-7874-4464-B6A7-C08061BDA0DB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{258F1D67-7874-4464-B6A7-C08061BDA0DB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{258F1D67-7874-4464-B6A7-C08061BDA0DB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3FAC19F1-6BD7-4A3A-9DB3-0F027E2E109D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3FAC19F1-6BD7-4A3A-9DB3-0F027E2E109D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3FAC19F1-6BD7-4A3A-9DB3-0F027E2E109D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3FAC19F1-6BD7-4A3A-9DB3-0F027E2E109D}.Release|Any CPU.Build.0 = Release|Any CPU
 		{693583B7-A06D-4CD9-BE09-71F9F9744EEE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{693583B7-A06D-4CD9-BE09-71F9F9744EEE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{693583B7-A06D-4CD9-BE09-71F9F9744EEE}.Release|Any CPU.ActiveCfg = Release|Any CPU
